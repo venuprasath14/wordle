@@ -1,0 +1,169 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body {
+    background-color: #121212;
+  }
+  
+  .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .keyboard-basic {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .keyboard-key {
+    height: 65px;
+    width: 50px;
+    font-size: 20px;
+  }
+  
+  .keyboard-spl {
+    height: 65px;
+    width: 70px;
+    font-size: 12px;
+  }
+  
+  .row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .wordle {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .default-box {
+    background-color: #121212;
+    border: 2px solid #3a393c;
+  }
+  
+  .default-key {
+    background-color: #818385;
+  }
+  
+  .green-box {
+    height: 54px;
+    width: 54px;
+    background-color: #538d4f;
+  }
+  
+  .yellow-box {
+    height: 54px;
+    width: 54px;
+    background-color: #b4a03b;
+  }
+  
+  .grey-box {
+    height: 54px;
+    width: 54px;
+    background-color: #3a393c;
+  }
+  
+  .green-key {
+    animation: changeGreen 2s forwards;
+  }
+  
+  .yellow-key {
+    animation: changeYellow 2s forwards;
+  }
+  
+  .grey-key {
+    animation: changeGrey 2s forwards;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateX(0);
+    }
+    50% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+  
+  @keyframes changeGreen {
+    0% {
+      background-color: #818385;
+    }
+    100% {
+      background-color: #538d4f;
+    }
+  }
+  
+  @keyframes changeYellow {
+    0% {
+      background-color: #818385;
+    }
+    100% {
+      background-color: #b4a03b;
+    }
+  }
+  
+  @keyframes changeGrey {
+    0% {
+      background-color: #818385;
+    }
+    100% {
+      background-color: #3a393c;
+    }
+  }
+  
+  .flip {
+    animation: flip 0.7s ease-in-out;
+  }
+  
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
